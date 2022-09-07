@@ -1,2 +1,6 @@
 #!/bin/bash
+<<<<<<< HEAD
 echo $PATH | find . -mindepth 1 -type d | wc -l
+=======
+echo $((`echo $PATH | grep -o ":/" | wc -l`+ 1))
+>>>>>>> 146884549c71146c078083ae966cee50104c6abe
